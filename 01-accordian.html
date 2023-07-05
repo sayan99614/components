@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>accordion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /*
+        SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+        FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+        */
+
+      /* main color #00796b */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+      body {
+        font-family: "Inter", sans-serif;
+      }
+
+      .accordion {
+        width: 700px;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: 32px 1fr 32px;
+        column-gap: 32px;
+        background: #fff;
+        box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.1);
+        padding: 24px;
+        margin-bottom: 5px;
+      }
+      .open {
+        border-top: 5px solid #00796b;
+      }
+
+      .item p {
+        margin-bottom: 24px;
+        font-size: 16px;
+        color: #343a40;
+        line-height: 1.6;
+      }
+      .open .item h2 {
+        color: #00796b;
+        margin-bottom: 32px;
+      }
+
+      .description {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-size: 14px;
+        color: #868e96;
+      }
+      .open .number {
+        color: #00796b;
+      }
+      .icon {
+        width: 24px;
+        height: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion">
+      <h2 class="number">01</h2>
+      <div class="item">
+        <h2>How long do I have to return my chair?</h2>
+      </div>
+      <svg
+        class="icon"
+        fill="#000000"
+        height="200px"
+        width="200px"
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 330 330"
+        xml:space="preserve"
+      >
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            id="XMLID_225_"
+            d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+          ></path>
+        </g>
+      </svg>
+    </div>
+    <div class="accordion open">
+      <h2 class="number">01</h2>
+      <div class="item">
+        <h2>How long do I have to return my chair?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero incidunt
+          repudiandae ab at sed voluptatem, tenetur fugiat totam non undeasdasda
+          reiciendis recusandae earum. Ea, magni nihil eius cumque sit nostrum.
+        </p>
+        <ul class="description">
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+            incidunt
+          </li>
+          <li>
+            Vero incidunt repudiandae ab at sed voluptatem, tenetur fugiat totam
+            non unde
+          </li>
+          <li>
+            Ipsa saepe veniam corrupti consequuntur minima quas id nobis eos.
+          </li>
+        </ul>
+      </div>
+      <svg
+        class="icon"
+        fill="#000000"
+        height="200px"
+        width="200px"
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 330 330"
+        xml:space="preserve"
+      >
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            id="XMLID_225_"
+            d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+          ></path>
+        </g>
+      </svg>
+    </div>
+    <div class="accordion">
+      <h2 class="number">01</h2>
+      <div class="item">
+        <h2>How long do I have to return my chair?</h2>
+      </div>
+      <svg
+        class="icon"
+        fill="#000000"
+        height="200px"
+        width="200px"
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 330 330"
+        xml:space="preserve"
+      >
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            id="XMLID_225_"
+            d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+          ></path>
+        </g>
+      </svg>
+    </div>
+  </body>
+</html>
