@@ -29,7 +29,10 @@
       }
 
       table {
+        width: 800px;
         margin: 200px auto;
+
+        border-collapse: collapse;
       }
 
       thead {
@@ -38,7 +41,20 @@
       }
 
       thead th {
-        margin: 0px 12px;
+        color: #fff;
+        font-size: 18px;
+      }
+
+      th,
+      td {
+        padding: 20px;
+        text-align: left;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #dee2e6;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #f8f9fa;
       }
     </style>
   </head>
@@ -66,9 +82,15 @@
           <td>80 cm</td>
         </tr>
         <tr>
-          <th>Weight</th>
+          <th>Depth</th>
           <td>16 kg</td>
           <td>22 kg</td>
+          <td>80 kg</td>
+        </tr>
+        <tr>
+          <th>Weight</th>
+          <td>70 kg</td>
+          <td>65 kg</td>
           <td>80 kg</td>
         </tr>
       </tbody>
