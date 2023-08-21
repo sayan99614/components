@@ -1,0 +1,121 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>carousal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /*
+        SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+        FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+        */
+
+      /* main color #00796b */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .p-container {
+        width: fit-content;
+        padding: 24px;
+        margin: 300px auto;
+        display: flex;
+        gap: 4px;
+        align-items: center;
+      }
+      .icon {
+        stroke: #1098ad;
+        width: 24px;
+        height: 24px;
+      }
+      .icon-p {
+        border: 1px solid #1098ad;
+        border-radius: 50%;
+        padding: 12px;
+      }
+      .icon-p:hover {
+        background-color: #1098ad;
+        stroke: white !important;
+      }
+      .icon-p:hover .icon {
+        stroke: #fff;
+      }
+      .text {
+        cursor: pointer;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .text:hover {
+        border-radius: 50%;
+        background-color: #1098ad;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="p-container">
+      <p class="icon-p">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </p>
+
+      <p class="text">1</p>
+      <p class="text">2</p>
+      <p class="text">3</p>
+      <p class="text">4</p>
+      <p class="text">4</p>
+      <p class="text">6</p>
+      <p>...</p>
+      <p class="text">23</p>
+      <p class="icon-p">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </p>
+    </div>
+  </body>
+</html>
