@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🐞 app layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-size: 20px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: #343a40;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+        height: 100vh;
+      }
+
+      nav,
+      menu,
+      aside,
+      section,
+      main {
+        padding: 20px 0px;
+      }
+
+      menu {
+        background-color: #6741d9;
+        color: #fff;
+        grid-column: 2/-1;
+      }
+
+      nav {
+        color: #fff;
+        background-color: #343a40;
+        grid-row: 1/-1;
+      }
+      section {
+        background-color: #e2e2e2;
+      }
+
+      aside {
+        background-color: #e2e2e2;
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 24px;
+        cursor: pointer;
+      }
+
+      .inner-flex p {
+        background-color: #5f3dc4;
+        padding: 8px 8px;
+      }
+
+      .inbox {
+        background-color: #ce3333;
+        padding: 8px 8px;
+      }
+
+      .inner-flex {
+        display: flex;
+        gap: 32px;
+      }
+      .mails {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: scroll;
+      }
+      .mails p {
+        background-color: #868e96;
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: 8px 14px;
+        padding: 16px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <menu>
+      <div class="flex-container">
+        <div class="inner-flex">
+          <p>New</p>
+          <p>Reply</p>
+          <p>Forward</p>
+          <p>Mark Unread</p>
+        </div>
+        <div>
+          <p class="inbox">right</p>
+        </div>
+      </div>
+    </menu>
+    <section class="mails">
+      <p>Email 1</p>
+      <p>Email 2</p>
+      <p>Email 3</p>
+      <p>Email 4</p>
+      <p>Email 5</p>
+      <p>Email 6</p>
+      <p>Email 7</p>
+      <p>Email 8</p>
+      <p>Email 9</p>
+      <p>Email 10</p>
+      <p>Email 11</p>
+    </section>
+    <main>Email View</main>
+    <aside>Additional Info</aside>
+  </body>
+</html>
